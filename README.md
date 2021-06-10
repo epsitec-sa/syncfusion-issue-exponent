@@ -6,3 +6,4 @@ This solution demonstrates an issue with `Syncfusion.DocIORenderer.Net.Core` ver
 
 This repository is provided to help Syncfusion support to reproduce and fix the issue.
 
+> Syncfusion [issue](https://www.syncfusion.com/support/directtrac/incidents/331611)
