@@ -10,7 +10,7 @@
       "request": "launch",
       "preLaunchTask": "build",
       "program": "${workspaceFolder}/Exponent/bin/Debug/netcoreapp3.1/Exponent.exe",
-      "args": ["C:\\Users\\guidi\\Projects\\syncfusion-issue-exponent"],
+      "args": ["."],
       "cwd": "${workspaceFolder}",
       "console": "internalConsole",
       "stopAtEntry": false

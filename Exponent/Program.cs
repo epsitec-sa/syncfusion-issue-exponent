@@ -10,7 +10,9 @@ namespace Exponent
         {
             var folderToConvert = args[0];
 
-            var files = System.IO.Directory.GetFiles(folderToConvert, "*.docx");
+            var folderPath = System.IO.Path.GetFullPath(folderToConvert);
+            var files = System.IO.Directory.GetFiles(folderPath, "*.docx");
+
             foreach(var file in files){
                 Program.Convert (file);
                 System.Console.WriteLine ($"{file} Correctly converted");
