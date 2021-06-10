@@ -8,11 +8,13 @@ namespace Exponent
     {
         static void Main(string[] args)
         {
-            var fileToConvert = args[0];
+            var folderToConvert = args[0];
 
-            Program.Convert (fileToConvert);
-
-            System.Console.WriteLine ("Conversion DONE");
+            var files = System.IO.Directory.GetFiles(folderToConvert, "*.docx");
+            foreach(var file in files){
+                Program.Convert (file);
+                System.Console.WriteLine ($"{file} Correctly converted");
+            }
         }
 
         private static void Convert(string docxPath)
